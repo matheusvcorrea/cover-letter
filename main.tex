@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Stylish Cover Letter
+% LaTeX Template
+% Version 1.0 (28/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/archives/63)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% The two fonts used in this template: Adobe Garamond Pro and Gill Sans
+% do not come with Windows by default. You will need to download them in
+% order to get an output as in the preview PDF. Otherwise, change those 
+% fonts to fonts that do come with Windows or comment out the lines to use 
+% the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ------------------------------------------------------------------------------
+
+\documentclass{scrlttr2}
+
+\usepackage{fontspec} % system fonts
+% \usepackage{marvosym} % use symbols
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[osf,sc]{mathpazo}
+\usepackage{hyperref}
+
+\usepackage{letterspace}  % for "\lsstyle" macro
+\usepackage{xcolor}
+
+% Removes all indentation from paragraphs
+\setlength\parindent{0pt}
+
+% Sets the font size and leading
+% \renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+% Your name
+\setkomavar{fromname}{MATHEUS V. CORREA}
+
+% Your address
+\setkomavar{fromaddress}{Rua Catharina S. Vicentin, 34\\Campinas, Brazil}
+
+% Your phone number
+\setkomavar{fromphone}{+55~(43)~99615~3091} 
+
+% Your email address
+\setkomavar{fromemail}{matheusviniciuscorrea@gmail.com}
+
+% Date format
+% \setkomavar{date}{14 January 2022}
+
+% City written before the date
+\setkomavar{place}{Campinas, Brazil}
+
+% Your name as you want it to appear in the signature
+\setkomavar{signature}{Matheus Correa.}
+
+% ------------------------------------------------------------------------------
+
+\KOMAoptions{
+  % paper=letter,
+  fontsize=11pt,
+  parskip=half,
+  backaddress=off,
+  fromalign=right,
+  fromphone=on,
+  foldmarks=false,
+  fromemail=true,
+  % addrfield=off,
+  fromrule=aftername,
+}
+
+\newcommand{\spacedsc}{\scshape\Large}
+
+\setkomafont{fromname}{\spacedsc}
+\setkomafont{backaddress}{\mdseries}
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\bfseries}
+
+\makeatletter
+\@setplength{firstheadvpos}{10mm}%
+\@setplength{refvpos}{80mm}%
+\makeatother
+
+% \firsthead{%
+%   \centering%
+%   {\addfontfeature{LetterSpace=20.0}\scshape \LARGE \usekomavar{fromname}}
+% }
+
+\firstfoot{%
+  \centering\footnotesize%
+  {Matheus Correa} \ $\cdot$ \ \usekomavar{fromemail} \ $\cdot$ \
+  \href{}{www.linkedin/in/matheusvcorrea}%
+}
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\renewcommand{\enclname}{Enclosures}
+
+\begin{letter}{% Addressed to the company you are applying to
+    % Mrs. Jane Smith\\
+    % Recruitment Officer\\
+    Talkdesk, Inc.\\
+    545 Mission Street, 12th floor\\
+    San Francisco, CA 94105%
+  }
+
+  \opening{Dear Mrs./Ms. Recruiter,}
+
+  I'm thrilled to apply for Software Engineer positions at Taskdesk, Inc. and
+  share my work with people that have the same passion for technology as
+  me. Furthermore I believe that my high education levels at prestigious
+  institutions at Brazil and reach professional experience makes me fit for the
+  role.
+
+  I begin with software development at 16 years-old where I start to tech myself
+  web systems programming. This period before the university I offered my work
+  as freelancer focusing on e-commerce. This then leads me to a bachelor's and
+  master's degree in theory of computation. Today I hold a position in an
+  strategic team inside an important insurance company.
+
+  The key skills and experiences that I can put at service and believe may be
+  taken advantage of by your the company are the following:
+
+  \begin{itemize}
+  \item Strong knowledge of software and machine learning engineering and its
+    life cycle under microservices architecture.
+  \item A 5+ years broad work experience that vary from e-commerce industry to
+    risk scoring predictions at insurance industry gives me a mature look at
+    what high quality solutions should looks like.
+  \item Programming under C++, Python, Java, and among others stacks.
+  \end{itemize}
+
+  In addition to the above I mention my personal interest in ethical and high
+  performance computer systems where I can apply all my highest academic and
+  career background to accomplish the most demanding tasks. That said I would
+  welcome the opportunity to discuss my application. I hope to hear from
+  you. Thank you for your consideration.
+
+  \closing{Sincerely,}
+
+  \encl{R\'esum\'e.} % enc
+
+\end{letter}
+\end{document}
+
+%%% Local Variables: 
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% End: 
