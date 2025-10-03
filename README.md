@@ -1,3 +1,3 @@
 # Cover Letter
 
-My cover letter
+My cover letter.
